@@ -1,0 +1,7 @@
+site,arm,reference,paired_unique_source_hours,public_EV_service_identical,delta_PCC_excess_kwh,delta_PCC_excess_seconds,delta_maximum_grid_kw,delta_grid_kwh,delta_throughput_kwh,delta_reserve_shortage_kwh_h,delta_reserve_shortage_seconds,delta_common_cost_yuan,delta_final_energy_kwh,delta_inventory_cost_v057,delta_inventory_cost_v060,PCC_excess_reduction_percent
+caltech,REF,F0,696,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+caltech,REF_RECOVERY,REF,696,True,0.0,0.0,0.0,53.02654520126271,16.949465629428232,0.0,0.0,33.171884371093256,52.226541761334005,3.402755567132772,1.8359593142931772,
+jpl,REF,F0,696,True,-91.25358166627052,-21549.0,-18.433999999960122,6.427985855447332,125.42813425784152,16.63814942571067,2734.9076726084386,13.89104225394476,0.0,13.89104225394476,13.89104225394476,97.56330891707206
+jpl,REF_RECOVERY,REF,696,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+office001,REF,F0,696,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+office001,REF_RECOVERY,REF,696,True,0.0,0.0,32.827350743420894,52.700740992858414,52.70074099285898,0.0,0.0,35.83650387514126,50.06570394321071,7.299052627511173,5.797081509214763,

@@ -1,0 +1,4 @@
+phase,seconds,PCC,reserve,SOC,rating,mutex,noexport,ramp,projection,grid_kwh,charge_kwh,discharge_kwh,PCC_excess_kwh,common_cost_yuan,actual_constraints_compliant
+preparation,7200,0,0,0,0,0,0,0,0,1.5605566192819493,0.05014964073525739,0.0,0.0,0.9403459428279901,True
+handoff,60,0,0,0,0,0,0,0,0,0.006673177083333335,1.797420704213314e-36,0.0,0.0,0.0040039062500000005,True
+recovery,3540,0,0,0,0,0,0,0,200,0.8551847935162072,0.0,0.04528281792500374,0.0,0.5167335015437247,True

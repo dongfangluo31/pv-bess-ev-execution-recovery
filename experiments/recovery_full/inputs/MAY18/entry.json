@@ -1,0 +1,67 @@
+{
+  "case": "MAY18",
+  "start_s": 24300,
+  "handoff_s": 27900,
+  "handoff_hold_end_s": 27960,
+  "bridge_end_s": 31440,
+  "end_s": 31500,
+  "battery": {
+    "energy_kwh": 30.0,
+    "charge_limit_kw": 15.0,
+    "discharge_limit_kw": 15.0,
+    "soc_min": 0.1,
+    "soc_max": 0.9,
+    "soc_initial": 0.5,
+    "soc_reference": 0.55,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95
+  },
+  "feeder_safe_kw": 10.0,
+  "dynamics": {
+    "plant_step_s": 1,
+    "ramp_kw_per_second": 0.5,
+    "lag_seconds": 5.0
+  },
+  "initial_energy_kwh": 14.998253357769697,
+  "mid_target_kwh": 15.3,
+  "final_target_kwh": 15.0,
+  "terminal_tolerances": {
+    "energy_kwh": 1e-08,
+    "power_kw": 1e-09
+  },
+  "shared_prices": {
+    "grid": 0.6,
+    "throughput": 0.08,
+    "curtail_report_only": 0.02
+  },
+  "origin_runs": [
+    "PREPARATION_SLEW_MAY18"
+  ],
+  "telemetry": {
+    "soc": 0.4999417785923232,
+    "tracked_power_kw": -0.19274752406892398,
+    "sample_s": 24300,
+    "available_s": 24300
+  },
+  "known_command_state": {
+    "as_of_s": 24300,
+    "last_delivered_command": {
+      "seq": 404,
+      "control_decision_s": 24180,
+      "issue_s": 24180.0000637,
+      "effective_s": 24240,
+      "valid_until_s": 24300,
+      "signed_kw": -0.19274752406892404
+    },
+    "pending_commands": [
+      {
+        "seq": 405,
+        "control_decision_s": 24240,
+        "issue_s": 24240.0000612,
+        "effective_s": 24300,
+        "valid_until_s": 24360,
+        "signed_kw": -0.19274752406892404
+      }
+    ]
+  }
+}

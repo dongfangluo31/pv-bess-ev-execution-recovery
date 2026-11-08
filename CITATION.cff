@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use any software, derived model inputs, or results from this repository (in commercial, technical, or academic work), please credit the authors, include https://github.com/dongfangluo31/pv-bess-ev-execution-recovery, and cite the original upstream data sources."
+title: "Battery execution correction for PV–BESS–EV charging stations: Inventory costs and conditional terminal recovery"
+type: software
+authors:
+  - family-names: Ma
+    given-names: Bailong
+  - family-names: Meng
+    given-names: Lingzhao
+  - family-names: Peng
+    given-names: Yunjie
+  - family-names: Wang
+    given-names: Xinhua
+  - family-names: Zhou
+    given-names: Jinyuan
+  - family-names: Tao
+    given-names: Renqian
+repository-code: https://github.com/dongfangluo31/pv-bess-ev-execution-recovery
+url: https://github.com/dongfangluo31/pv-bess-ev-execution-recovery
+version: 1.0.0
+license:
+  - Apache-2.0
+  - CC-BY-4.0

@@ -1,0 +1,4 @@
+period,per_arm,gain,states,issued_forecasts,newly_delivered_labels,newly_processed_labels,scalar_updates,actual_projection_clips,prior_boundary_update_occupancy,terminal_waiting_labels,terminal_pending_snapshots
+PREFIX24H,True,0.02,384,96,95,94,17860,39,36,1,4751
+SUFFIX43H,True,0.02,384,172,172,172,66044,157,159,1,4752
+FULL67H,True,0.02,384,268,267,266,83904,196,195,1,4752

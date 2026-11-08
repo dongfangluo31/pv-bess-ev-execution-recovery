@@ -1,0 +1,29 @@
+[
+  [
+    "python",
+    "-B",
+    "experiments/closed_loop/run.py",
+    "--case",
+    "PVAWARE_SOFIE875H",
+    "--output",
+    "outputs/PVAWARE_SOFIE875H"
+  ],
+  [
+    "python",
+    "-B",
+    "experiments/closed_loop/run.py",
+    "--case",
+    "PVAWARE_OPSD24H",
+    "--output",
+    "outputs/PVAWARE_OPSD24H"
+  ],
+  [
+    "python",
+    "-B",
+    "experiments/closed_loop/run.py",
+    "--case",
+    "PVAWARE_OPSD67H",
+    "--output",
+    "outputs/PVAWARE_OPSD67H"
+  ]
+]

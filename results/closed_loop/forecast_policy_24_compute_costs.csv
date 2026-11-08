@@ -1,0 +1,25 @@
+case,policy,MPC_calls,MPC_accepted,MPC_failed_or_rejected,recorded_time_limit_returns,late_commands,backend_wall_seconds,actual_arm_wall_seconds,status_messages
+residential3_2016-07-01,all,96,96,0,0,0,26.39213620033115,63.50152229995001,{}
+residential3_2016-07-01,none,96,96,0,0,0,25.128573599969968,62.64438820001669,{}
+residential3_2016-07-01,learned_1_20,96,96,0,0,0,24.88775920041371,62.65343559999019,{}
+residential3_2016-07-01,learned_1_10,96,96,0,0,0,25.3097879998968,60.75373850000324,{}
+residential3_2016-07-01,learned_1_5,96,96,0,0,0,24.77313550026156,60.36406349996105,{}
+residential3_2016-07-01,margin_1_20,96,96,0,0,0,25.229555600089952,65.15837499999907,{}
+residential3_2016-07-01,margin_1_10,96,96,0,0,0,24.1592674999265,60.940928199968766,{}
+residential3_2016-07-01,margin_1_5,96,96,0,0,0,24.55826979962876,60.36617669998668,{}
+residential4_2016-07-01,all,96,84,12,12,12,788.0103072000784,824.61918530002,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,none,96,84,12,12,12,786.8760074999882,822.905801899964,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,learned_1_20,96,84,12,12,12,787.9970047004172,824.7726134000113,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,learned_1_10,96,84,12,12,12,787.367878299905,824.6021322000306,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,learned_1_5,96,84,12,12,12,788.1894847001531,825.1986958000343,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,margin_1_20,96,84,12,12,12,789.3346289997571,827.2232476000208,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,margin_1_10,96,84,12,12,12,789.659737800248,827.774868700013,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential4_2016-07-01,margin_1_5,96,84,12,12,12,795.4211209997884,834.5319131999859,"{""Time limit reached. (HiGHS Status 13: Time limit reached)"":12}"
+residential6_2016-07-01,all,96,96,0,0,0,33.48695989995031,68.89654769998742,{}
+residential6_2016-07-01,none,96,96,0,0,0,32.53480359952664,68.18863129999954,{}
+residential6_2016-07-01,learned_1_20,96,96,0,0,0,34.324103899882175,72.41240290005226,{}
+residential6_2016-07-01,learned_1_10,96,96,0,0,0,32.09277690021554,68.98638580000261,{}
+residential6_2016-07-01,learned_1_5,96,96,0,0,0,32.31694049964426,67.0554717000341,{}
+residential6_2016-07-01,margin_1_20,96,96,0,0,0,31.943698900053278,67.6877202000469,{}
+residential6_2016-07-01,margin_1_10,96,96,0,0,0,31.53282029973343,67.68330910004443,{}
+residential6_2016-07-01,margin_1_5,96,96,0,0,0,33.00197389983805,70.06801990000531,{}

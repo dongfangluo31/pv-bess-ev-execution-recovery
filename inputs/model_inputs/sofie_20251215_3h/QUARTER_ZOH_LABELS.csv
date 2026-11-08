@@ -1,0 +1,13 @@
+quarter,start_s,end_s,modeled_label_available_s,ev_ZOH_estimate_kwh_exact,pv_ZOH_estimate_kwh_exact,ev_ZOH_estimate_kwh,pv_ZOH_estimate_kwh,semantics
+0,0,900,900,0,6499/90000,0.0,0.07221111111111111,"posterior ZOH model estimate, not reported counter energy or current opening input"
+1,900,1800,1800,0,157201/1800000,0.0,0.08733388888888889,"posterior ZOH model estimate, not reported counter energy or current opening input"
+2,1800,2700,2700,0,359797/3600000,0.0,0.09994361111111111,"posterior ZOH model estimate, not reported counter energy or current opening input"
+3,2700,3600,3600,0,70421/600000,0.0,0.11736833333333334,"posterior ZOH model estimate, not reported counter energy or current opening input"
+4,3600,4500,4500,0,167707/1200000,0.0,0.13975583333333333,"posterior ZOH model estimate, not reported counter energy or current opening input"
+5,4500,5400,5400,0,1610129/3600000,0.0,0.44725805555555553,"posterior ZOH model estimate, not reported counter energy or current opening input"
+6,5400,6300,6300,0,2506879/3600000,0.0,0.6963552777777777,"posterior ZOH model estimate, not reported counter energy or current opening input"
+7,6300,7200,7200,0,1366601/1200000,0.0,1.1388341666666666,"posterior ZOH model estimate, not reported counter energy or current opening input"
+8,7200,8100,8100,98766817/36000000,61149/40000,2.7435226944444446,1.528725,"posterior ZOH model estimate, not reported counter energy or current opening input"
+9,8100,9000,9000,141825433/36000000,7212587/3600000,3.939595361111111,2.003496388888889,"posterior ZOH model estimate, not reported counter energy or current opening input"
+10,9000,9900,9900,126147091/36000000,36333/16000,3.504085861111111,2.2708125,"posterior ZOH model estimate, not reported counter energy or current opening input"
+11,9900,10800,10800,8064029/2400000,3007843/1200000,3.3600120833333333,2.5065358333333334,"posterior ZOH model estimate, not reported counter energy or current opening input"

@@ -1,0 +1,4 @@
+site,month_connect,left_censored_connected_at_start_excluded,has_frozen_declaration,undeclared,completed,completed_by_deadline,unplug_incomplete,right_censored,deadline_overdue_sessions,requested_kwh,delivered_kwh,remaining_kwh,overdue_kwh,delivered_after_deadline_kwh,peak_instantaneous_virtual_EV_kw,minutes,hours
+caltech,850,24,664,186,525,408,136,4,253,12531.81,10802.616,1729.194,2692.97,1014.142,136.8,41760,696
+jpl,1408,14,1282,126,947,835,335,2,446,36408.29,29899.066,6509.224,7882.386,1378.554,316.8,41760,696
+office001,77,8,42,35,34,28,8,0,14,1081.44,1003.224,78.216,156.518,78.30199999999999,28.8,41760,696

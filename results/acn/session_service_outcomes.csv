@@ -1,0 +1,4 @@
+site,unique_month_CONNECT,undeclared_request_unknown,declared_completed_on_time,declared_completed_late,declared_incomplete_at_unplug,declared_incomplete_at_month_end,mutually_exclusive_sum,right_censored_including_unknown,left_censored_pre_month_excluded,event_population_not_multiplied_by_3_arms
+caltech,850,186,408,117,136,3,850,4,24,True
+jpl,1408,126,835,112,335,0,1408,2,14,True
+office001,77,35,28,6,8,0,77,0,8,True

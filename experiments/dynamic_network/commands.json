@@ -1,0 +1,11 @@
+[
+  [
+    "python",
+    "-B",
+    "experiments/dynamic_network/run.py",
+    "--arm",
+    "all",
+    "--output",
+    "outputs/one_second_network"
+  ]
+]

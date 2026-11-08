@@ -1,0 +1,76 @@
+{
+  "month_start_utc": "2020-02-01T00:00:00+00:00",
+  "month_end_utc_exclusive": "2020-03-01T00:00:00+00:00",
+  "sites": [
+    "caltech",
+    "jpl",
+    "office001"
+  ],
+  "source_publication": "https://doi.org/10.1145/3307772.3328313",
+  "input_fields": [
+    "sessionID",
+    "stationID",
+    "connectionTime",
+    "disconnectTime",
+    "userInputs[].modifiedAt",
+    "userInputs[].requestedDeparture",
+    "userInputs[].kWhRequested"
+  ],
+  "raw_pages": "All authenticated ACN session endpoint pages for the selected site, covering the month and overlapping sessions. Supply the files in a site-specific directory. No timeseries endpoint is needed.",
+  "event_order": [
+    "CONNECT",
+    "UNPLUG",
+    "FIRST_REQUEST or DECLARATION_STATE"
+  ],
+  "processing": "Unambiguous first valid, unexpired post-arrival declaration establishes one total counterfactual service request. Later declarations do not add energy. Earlier cohort arrivals are left-censored. Unplug stops service. Exact rational intervals split changes inside minute holds.",
+  "battery_energy_kwh": 600,
+  "battery_power_kw": 250,
+  "charge_efficiency": 0.95,
+  "discharge_efficiency": 0.95,
+  "soc_bounds": [
+    0.1,
+    0.9
+  ],
+  "initial_soc": 0.5,
+  "nominal_reference_soc": 0.55,
+  "terminal_target_kwh": 300,
+  "ev_service_per_active_session_kw": 7.2,
+  "pv_kw": 0,
+  "import_limit_kw": 200,
+  "price_yuan_per_kwh": 0.6,
+  "throughput_yuan_per_kwh": 0.08,
+  "terminal_valuation_yuan_per_kwh": [
+    0.57,
+    0.6
+  ],
+  "solver": {
+    "mpc_period_s": 3600,
+    "horizon_h": 24,
+    "method": "GS_F0",
+    "threads": 1,
+    "seed": 20260706,
+    "relative_mip_gap": 0.001,
+    "time_limit_s": 60
+  },
+  "execution": {
+    "minute_s": 60,
+    "event": [
+      "minute tick",
+      "source timestamp",
+      "service completion calculated from declared remaining energy"
+    ]
+  },
+  "experiment_arms": {
+    "minute_original": 9,
+    "targeted_first_round": 5,
+    "event_reference_governor": 3
+  },
+  "expected_full_month": {
+    "hours_per_arm": 696,
+    "minutes_per_arm": 41760,
+    "jpl_governor_triggers": 47007,
+    "caltech_governor_triggers": 44763,
+    "office001_governor_triggers": 42028
+  },
+  "outputs": "../../results/acn"
+}

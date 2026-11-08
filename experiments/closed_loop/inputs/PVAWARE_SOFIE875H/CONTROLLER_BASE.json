@@ -1,0 +1,39 @@
+{
+  "run_id": "PVAWARE_SOFIE875H",
+  "battery": {
+    "energy_kwh": 30.0,
+    "charge_limit_kw": 15.0,
+    "discharge_limit_kw": 15.0,
+    "soc_min": 0.1,
+    "soc_max": 0.9,
+    "soc_initial": 0.5,
+    "soc_reference": 0.55,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95
+  },
+  "prediction": {
+    "horizon_steps": 96,
+    "step_hours": 0.25,
+    "ev_additive_uncertainty_kw": 2.0,
+    "pv_additive_uncertainty_kw": 2.0,
+    "illustrative_price_yuan_per_kwh": 0.6,
+    "reserve_hours": 1.0,
+    "virtual_import_limit_kw": 10.0,
+    "pressure_dimensionless": 1.0
+  },
+  "feeder_safe_kw": 10.0,
+  "model_pv_rating_kw_unused_for_native_clipping": 300.0,
+  "nominal_method": "GS_F1",
+  "filter_kind": "F1_reserve",
+  "outer_step_s": 900,
+  "freshness_validated_at": "decision_start; actual issue/effective ages also logged without rejuvenation",
+  "fallback": "Both arms use identical original domain checks and PV-aware nominal mapping; common rejection gives zero target. Only F1 then applies REF; no retry.",
+  "source_scope": "Same current nine native channels and own observed SOC in both one-minute arms; no future data or calibrated-coverage claim",
+  "duration_s": 31500,
+  "clock_origin_logger_time": "2025-12-04 07:00:00",
+  "paired_latency_contract": "NEXT_CONTROL_SLOT60",
+  "dataset": "sofie",
+  "physical_policy": "PV_PRIORITY_NOEXPORT",
+  "disturbance": null,
+  "common_pre_mapping": true
+}

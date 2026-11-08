@@ -1,0 +1,19 @@
+{
+  "working_directory": "repository root",
+  "dependency_install": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "experiments/benchmarks/requirements.txt"
+  ],
+  "run_all_22_cases": [
+    "python",
+    "-B",
+    "experiments/benchmarks/run.py",
+    "--output-dir",
+    "outputs/benchmarks"
+  ],
+  "result_table": "../../results/benchmarks/boptest_and_ieee14_summary.csv"
+}

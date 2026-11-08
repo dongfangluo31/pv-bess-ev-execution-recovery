@@ -1,0 +1,32 @@
+{
+  "working_directory": "repository root",
+  "python": "3.13",
+  "install": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "experiments/thermal/requirements.txt"
+  ],
+  "hot_long_pair": [
+    "python",
+    "-B",
+    "experiments/thermal/run.py",
+    "--case",
+    "A40_HOT_LONG"
+  ],
+  "all": [
+    "python",
+    "-B",
+    "experiments/thermal/run.py",
+    "--report",
+    "thermal_replay.json"
+  ],
+  "inputs": [
+    "common.json",
+    "cases.json"
+  ],
+  "target": "../../results/thermal/electrothermal_coupling_16_arms.csv",
+  "thermal_shape_source": "https://github.com/alliander-opensource/transformer-thermal-model/tree/1df0f781a3afcb53edb310bcab09aa052b58222f"
+}

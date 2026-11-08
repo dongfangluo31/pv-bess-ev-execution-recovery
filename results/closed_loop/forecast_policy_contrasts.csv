@@ -1,0 +1,10 @@
+case,heldout,date_utc,declared_optional_duty,delta_direction,learned_purchases,margin_purchases,delta_optional_purchases,delta_actual_PCC_excess_kwh,delta_actual_PCC_excess_seconds,delta_actual_PCC_peak_excess_kw,delta_import_kwh,delta_export_kwh,delta_throughput_kwh,delta_common_operating_cost_yuan,delta_final_stored_energy_kwh,delta_stored_energy_change_kwh,delta_terminal_cost_057_yuan,delta_terminal_cost_060_yuan
+residential3_2016-07-01,residential3,2016-07-01,0.05,learned minus margin,55,63,-8,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential3_2016-07-01,residential3,2016-07-01,0.1,learned minus margin,112,134,-22,0.0,0,0.0,0.002947495906842512,0.0,-0.0029474959068278572,0.0015326978715597406,0.0031026272703353897,0.0031026272703356117,-0.0002357996725317335,-0.00032887849064167085
+residential3_2016-07-01,residential3,2016-07-01,0.2,learned minus margin,232,268,-36,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential4_2016-07-01,residential4,2016-08-27,0.05,learned minus margin,0,0,0,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential4_2016-07-01,residential4,2016-08-27,0.1,learned minus margin,0,91,-91,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential4_2016-07-01,residential4,2016-08-27,0.2,learned minus margin,89,268,-179,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential6_2016-07-01,residential6,2016-07-01,0.05,learned minus margin,47,0,47,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential6_2016-07-01,residential6,2016-07-01,0.1,learned minus margin,100,0,100,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+residential6_2016-07-01,residential6,2016-07-01,0.2,learned minus margin,207,39,168,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

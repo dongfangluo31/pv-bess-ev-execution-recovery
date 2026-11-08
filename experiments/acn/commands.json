@@ -1,0 +1,97 @@
+{
+  "working_directory": "repository root",
+  "python": "3.13",
+  "dependency_install": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "experiments/acn/requirements.txt"
+  ],
+  "source": "https://ev.caltech.edu/dataset",
+  "download_token_environment": "ACN_API_TOKEN",
+  "download_jpl": [
+    "python",
+    "-B",
+    "experiments/acn/fetch_pages.py",
+    "--site",
+    "jpl",
+    "--out",
+    "<JPL_API_SITE_DIRECTORY_OUTSIDE_REPO>"
+  ],
+  "input_directory_layout": "<ACN_API_SITE_DIRECTORY>/page_*.json",
+  "input_page_schema": {
+    "_items": [
+      "ACN session records with connectionTime, disconnectTime, sessionID, stationID and userInputs"
+    ]
+  },
+  "monthly_jpl_governor": [
+    "python",
+    "-B",
+    "experiments/acn/run.py",
+    "--case",
+    "JPL_EVENT_REFERENCE_GOVERNOR",
+    "--raw-pages",
+    "<JPL_API_SITE_DIRECTORY>",
+    "--report",
+    "jpl-monthly.json"
+  ],
+  "monthly_caltech_governor": [
+    "python",
+    "-B",
+    "experiments/acn/run.py",
+    "--case",
+    "CALTECH_EVENT_REFERENCE_GOVERNOR",
+    "--raw-pages",
+    "<CALTECH_API_SITE_DIRECTORY>",
+    "--report",
+    "caltech-monthly.json"
+  ],
+  "monthly_office001_governor": [
+    "python",
+    "-B",
+    "experiments/acn/run.py",
+    "--case",
+    "OFFICE001_EVENT_REFERENCE_GOVERNOR",
+    "--raw-pages",
+    "<OFFICE001_API_SITE_DIRECTORY>",
+    "--report",
+    "office001-monthly.json"
+  ],
+  "original_jpl_baseline": [
+    "python",
+    "-B",
+    "experiments/acn/run.py",
+    "--case",
+    "JPL_F0",
+    "--raw-pages",
+    "<JPL_API_SITE_DIRECTORY>"
+  ],
+  "all_17_arms": [
+    "python",
+    "-B",
+    "experiments/acn/run_all.py",
+    "--raw-root",
+    "<DIRECTORY_CONTAINING_CALTECH_JPL_OFFICE001_SUBDIRECTORIES>",
+    "--out",
+    "<NEW_OUTPUT_DIRECTORY>"
+  ],
+  "short_prefix_jpl": [
+    "python",
+    "-B",
+    "experiments/acn/run.py",
+    "--case",
+    "JPL_EVENT_REFERENCE_GOVERNOR",
+    "--raw-pages",
+    "<JPL_API_SITE_DIRECTORY>",
+    "--hours",
+    "24"
+  ],
+  "list_cases": [
+    "python",
+    "-B",
+    "experiments/acn/run.py",
+    "--help"
+  ]
+}

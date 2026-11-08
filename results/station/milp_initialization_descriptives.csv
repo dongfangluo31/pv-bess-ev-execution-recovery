@@ -1,0 +1,4 @@
+scenarios,first_call,first_request,first_model_build_s,later_five_build_median_s,first_backend_s,later_five_backend_median_s,first_full_delivery_s,interpretation
+3,1,opsd24h_mpc1,0.005142099980730563,0.0049912999966181815,0.1299260000232607,0.43354070000350475,0.15232569997897372,"Different saved requests; no repeated cold/warm comparison, so initialization penalty is not causally estimated."
+6,2,opsd24h_mpc1,0.013695699977688491,0.009001600032206625,0.28202310000779107,1.183890899992548,0.31945359997916967,"Different saved requests; no repeated cold/warm comparison, so initialization penalty is not causally estimated."
+12,3,opsd24h_mpc1,0.02338879997842014,0.018599600007291883,0.8780676999595016,8.306864899990615,0.9345926999812946,"Different saved requests; no repeated cold/warm comparison, so initialization penalty is not causally estimated."

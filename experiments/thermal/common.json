@@ -1,0 +1,126 @@
+{
+  "schema": "AC_THERMAL_INPUT",
+  "asset": {
+    "sn_mva": 0.25,
+    "vn_hv_kv": 10.0,
+    "vn_lv_kv": 0.4,
+    "vk_percent": 4.0,
+    "vkr_percent": 1.2,
+    "pfe_kw": 0.6,
+    "i0_percent": 0.24,
+    "shift_degree": 150.0,
+    "vector_group": "Dyn5",
+    "tap_neutral": 0,
+    "tap_side": "hv",
+    "standard_type": "0.25 MVA 10/0.4 kV",
+    "tap_pos": 0,
+    "source_voltage_pu": 1.0,
+    "source_angle_degree": 0.0,
+    "load_Q_mvar": 0.0,
+    "battery_Q_mvar": 0.0,
+    "rated_lv_current_ka": 0.3608439182435161,
+    "rated_hv_current_ka": 0.014433756729740645,
+    "rated_copper_loss_kw": 3.0,
+    "loss_ratio_derivation": "3kW/0.6kW=5",
+    "two_bus_no_lines": true,
+    "transformer_model": "t",
+    "network_base_mva": 1.0
+  },
+  "thermal_parameters": {
+    "oil_rise_rated_k": 70.0,
+    "hotspot_gradient_rated_k": 27.6,
+    "load_to_no_load_loss_ratio": 5.0,
+    "oil_exponent": 0.8,
+    "winding_exponent": 1.6,
+    "oil_time_constant_min": 180.0,
+    "winding_time_constant_min": 4.0,
+    "k11": 1.0,
+    "k21": 1.0,
+    "k22": 2.0
+  },
+  "thermal_scope": "Declared transfer assumption: reference thermal shape, not measured/calibrated standard-type asset",
+  "battery": {
+    "energy_kwh": 600.0,
+    "charge_limit_kw": 250.0,
+    "discharge_limit_kw": 250.0,
+    "soc_initial": 0.5,
+    "soc_min": 0.1,
+    "soc_max": 0.9,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95
+  },
+  "controller": {
+    "nominal_charge_kw": 0.0,
+    "nominal_discharge_kw": 0.0,
+    "reserve_kwh": 0.0,
+    "recharge": false,
+    "free_EV_shedding": false,
+    "ideal_instantaneous_60s": true,
+    "static_current_cap_pu": 1.0,
+    "dynamic_max_current_pu": 1.5,
+    "max_search_iterations": 60,
+    "max_predictions_per_step": 62,
+    "positive_time_guard_c": 1e-09,
+    "static_power_cap_kw": 237.5,
+    "conversion_voltage_ll_kv": 0.38,
+    "cap_formula": "min(300, sqrt(3)*0.38*Irated_lv_kA*1000*Kcap)",
+    "sequence": "initial thermal -> cap -> actual BESS -> AC LV current -> thermal post -> next cap",
+    "low_voltage_policy": "Report actual vm<.95 without fictitious load shedding or guaranteed voltage claim"
+  },
+  "limits": {
+    "oil_c": 105.0,
+    "hotspot_c": 120.0,
+    "hard_PCC_kw": 300.0
+  },
+  "numerical": {
+    "AC_algorithm": "nr",
+    "AC_max_iteration": 100,
+    "AC_tolerance_mva": 1e-10,
+    "ac_balance_tolerance_kw": 1e-08,
+    "thermal_step_tolerance_c": 1e-09,
+    "init": "explicit_nameplate_phase",
+    "init_vm_pu": [
+      1.0,
+      1.0
+    ],
+    "init_va_degree": [
+      0.0,
+      -150.0
+    ],
+    "initial_bus_indices": [
+      0,
+      1
+    ],
+    "initialization_requires_pre_solve": false,
+    "calculate_voltage_angles": true,
+    "numba": false
+  },
+  "accounting": {
+    "grid_yuan_per_kwh": 0.6,
+    "throughput_yuan_per_kwh": 0.08,
+    "terminal_value_yuan_per_kwh": [
+      0.57,
+      0.6
+    ],
+    "scope": "Inherited uniform illustrative accounting; not measured tariff or a market claim",
+    "grid_meter": "HV external-grid import including actual transformer losses",
+    "additionally_report_LV_grid_import": true
+  },
+  "step_seconds": 60,
+  "seconds_per_arm": 21600,
+  "steps_per_arm": 360,
+  "arms": [
+    "STATIC_RATED",
+    "DYNAMIC_THERMAL"
+  ],
+  "maximum_calls": {
+    "AC": 5760,
+    "thermal_actual_steps": 5760,
+    "dynamic_peak_predictions": 178560
+  },
+  "environment": {
+    "python": "3.13.5",
+    "pandapower": "3.4.0",
+    "seed": 20260706
+  }
+}

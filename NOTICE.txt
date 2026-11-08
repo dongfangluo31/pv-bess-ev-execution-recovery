@@ -1,0 +1,47 @@
+Battery execution correction for PV–BESS–EV charging stations: Inventory costs and conditional terminal recovery
+Copyright (c) 2026 Bailong Ma, Lingzhao Meng, Yunjie Peng, Xinhua Wang, Jinyuan Zhou, Renqian Tao.
+Repository: https://github.com/dongfangluo31/pv-bess-ev-execution-recovery
+
+Attribution Notice (Apache-2.0 Section 4(d) & CC-BY-4.0 Section 3(a)):
+Any commercial or non-commercial use, redistribution, adaptation, or derivative work
+incorporating software, model inputs, or numerical results from this repository
+must retain attribution to the authors:
+  Bailong Ma, Lingzhao Meng, Yunjie Peng, Xinhua Wang, Jinyuan Zhou, Renqian Tao
+and include the repository link:
+  https://github.com/dongfangluo31/pv-bess-ev-execution-recovery
+
+Upstream data source attributions:
+
+Open Power System Data / CoSSMic, Household Data, 2020-04-15.
+https://data.open-power-system-data.org/household_data/2020-04-15/
+
+Dimitrios Avgoloupis, Vasilis Michalakopoulos, Elissaios Sarmas,
+Vangelis Marinakis, Mario Couto, Alessio Coccia, Mariana Jimenez,
+Residential Energy Dataset with Electric Vehicles, Photovoltaic Generation
+and Tariff Variability in Ireland, version 7.
+https://doi.org/10.6084/m9.figshare.30294478.v7
+
+Steffen Schlegel, Daniel Foerst, Nizam Halawi, Dirk Westermann,
+Data of an autonomous microgrid with just EV load and PV generation.
+https://doi.org/10.5281/zenodo.21699601
+
+Zachary J. Lee, Tongxin Li, Steven H. Low, ACN-Data.
+https://doi.org/10.1145/3307772.3328313
+
+Rohit Trivedi, Mohamed Bahloul, Aziz Saif, Sandipan Patra, Shafi Khadem,
+Comprehensive Dataset on Electrical Load Profiles for Energy Community
+in Ireland (StoreNet).
+https://doi.org/10.1038/s41597-024-03454-2
+
+Patrick Huber, Melvin Ott, Martin Friedli, Andreas Rumsch, Andrew Paice,
+Residential Power Traces for Five Houses: the iHomeLab RAPT Dataset, v1.
+https://doi.org/10.5281/zenodo.3581895
+
+Sayeed Hasan, Andrei Blinov, Andrii Chub, Dmitri Vinnikov,
+PV Generation and Consumption Dataset of an Estonian Residential Dwelling.
+https://doi.org/10.48726/6hayh-x0h25
+
+Lujia Wang, Xiang Zhang, Rafael Villarroel, Qiang Liu, Zhongdong Wang,
+Lijun Zhou, Top-oil temperature modelling by calibrating oil time constant
+for an oil natural air natural distribution transformer.
+https://doi.org/10.1049/iet-gtd.2020.0155

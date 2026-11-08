@@ -1,0 +1,56 @@
+[
+  {
+    "arm": "SCALAR_SHARED",
+    "controller_budget_seconds": 600,
+    "maximum_calls": {
+      "AC": 10800,
+      "J7": 0,
+      "J8": 0,
+      "JOINT_MIP": 0,
+      "MPC": 21,
+      "PROJECTION_LP": 0
+    },
+    "physical_seconds": 10800,
+    "planning_seconds": [
+      0,
+      3600,
+      7200
+    ]
+  },
+  {
+    "arm": "NETWORK_JOINT",
+    "controller_budget_seconds": 600,
+    "maximum_calls": {
+      "AC": 10800,
+      "J7": 180,
+      "J8": 0,
+      "JOINT_MIP": 0,
+      "MPC": 21,
+      "PROJECTION_LP": 180
+    },
+    "physical_seconds": 10800,
+    "planning_seconds": [
+      0,
+      3600,
+      7200
+    ]
+  },
+  {
+    "arm": "JOINT_H24_NETWORK_MPC",
+    "controller_budget_seconds": 600,
+    "maximum_calls": {
+      "AC": 10800,
+      "J7": 0,
+      "J8": 3,
+      "JOINT_MIP": 3,
+      "MPC": 0,
+      "PROJECTION_LP": 0
+    },
+    "physical_seconds": 10800,
+    "planning_seconds": [
+      0,
+      3600,
+      7200
+    ]
+  }
+]

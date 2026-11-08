@@ -1,0 +1,21 @@
+{
+  "battery": {
+    "energy_kwh": 30.0,
+    "charge_limit_kw": 15.0,
+    "discharge_limit_kw": 15.0,
+    "soc_min": 0.1,
+    "soc_max": 0.9,
+    "soc_initial": 0.5,
+    "soc_reference": 0.55,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95
+  },
+  "plant_step_s": 1,
+  "ramp_kw_per_second": 0.5,
+  "lag_seconds": 5.0,
+  "duration_s": 31500,
+  "initial_tracked_power_kw": 0.0,
+  "source_scope": "Fixed accepted Dec4 offline past-point ZOH estimate with six over-age masks; original strict29/35 retained; not measured exactness",
+  "dataset": "sofie",
+  "physical_policy": "PV_PRIORITY_NOEXPORT"
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.runtime-cache/
+.venv/
+outputs/
+thermal-traces/
+*.tmp

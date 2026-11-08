@@ -1,0 +1,28 @@
+Licensing & Attribution Terms (v1.0.0)
+======================================
+
+1. Software (code/, experiments/):
+   Licensed under the Apache License, Version 2.0 (Apache-2.0) — see LICENSES/Apache-2.0.txt.
+   Commercial and non-commercial use, modification, and distribution (in source or object form)
+   are permitted, provided that all copyright, patent, and attribution notices in NOTICE.txt
+   (including the authors' names and https://github.com/dongfangluo31/pv-bess-ev-execution-recovery)
+   are retained in accordance with Section 4 of Apache-2.0.
+
+2. Model Inputs, Result Tables & Documentation (inputs/, results/, README.md):
+   Licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0) — see LICENSES/CC-BY-4.0.txt.
+   Commercial and non-commercial sharing and adaptation are permitted, provided appropriate
+   credit is given naming the authors and linking https://github.com/dongfangluo31/pv-bess-ev-execution-recovery
+   (see NOTICE.txt and CITATION.cff), a link to the license is provided, and changes are indicated.
+
+3. Attribution Requirement (Commercial, Technical & Academic Use):
+   Whenever software, model inputs, or numerical results from this repository are used,
+   adapted, or redistributed in commercial products/services, software distributions, datasets,
+   technical reports, or scholarly publications, credit the authors and include the repository URL:
+     Bailong Ma, Lingzhao Meng, Yunjie Peng, Xinhua Wang, Jinyuan Zhou, Renqian Tao
+     https://github.com/dongfangluo31/pv-bess-ev-execution-recovery
+
+----------------------------------------------------------------------
+开源许可与署名要求说明（v1.0.0）
+----------------------------------------------------------------------
+1. 软件代码（code/、experiments/）：采用 Apache License 2.0（Apache-2.0，见 LICENSES/Apache-2.0.txt），允许商用、修改与再分发；任何源码或二进制/衍生品分发（含商业用途）须按协议第 4 条保留版权声明及 NOTICE.txt 中的作者署名与仓库链接。
+2. 模型输入、结果表与文档（inputs/、results/、README.md）：采用知识共享署名 4.0 国际许可协议（CC-BY-4.0，见 LICENSES/CC-BY-4.0.txt），允许商用、共享与演绎；在商业应用、二次分发、技术报告或学术发表等任何使用过程中，均须提及全体作者并附上仓库链接（https://github.com/dongfangluo31/pv-bess-ev-execution-recovery）。

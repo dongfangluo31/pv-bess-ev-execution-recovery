@@ -1,0 +1,19 @@
+{
+  "case": ["MAY18", "OPSD"],
+  "arm": ["REFERENCE", "SIMPLE", "NUMERIC", "SIMPLE_PREP_CAUSAL_BRAKE", "NUMERIC_PREP_CAUSAL_BRAKE"],
+  "reference_and_recorded_decisions": ["python", "-B", "experiments/recovery_full/run.py", "--case", "OPSD", "--arm", "NUMERIC_PREP_CAUSAL_BRAKE", "--commands", "recorded", "--output", "opsd_recovery.json"],
+  "new_simple_plans": ["python", "-B", "experiments/recovery_full/run.py", "--case", "MAY18", "--arm", "SIMPLE", "--commands", "plan"],
+  "new_numeric_plans": ["python", "-B", "experiments/recovery_full/run.py", "--case", "MAY18", "--arm", "NUMERIC", "--commands", "plan"],
+  "new_brake_plans": ["python", "-B", "experiments/recovery_full/run.py", "--case", "MAY18", "--arm", "SIMPLE_PREP_CAUSAL_BRAKE", "--commands", "plan"],
+  "solver_iteration_limit": 20,
+  "solver_ftol": 1e-12,
+  "delivery_deadline_s": 60,
+  "dispatch_delay_s": 60,
+  "valid_through_issue_plus_s": 120,
+  "plant_step_s": 1,
+  "result_table": "../../results/recovery/full_horizon_10_arm_comparison.csv",
+  "source": {
+    "MAY18": {"dataset": "SOFIE v6", "attribution": "S. Schlegel, D. Först, N. Halawi and D. Westermann", "identifier": "https://doi.org/10.5281/zenodo.21699601", "license": "CC BY 4.0", "adaptations": ["aggregate station power", "release timestamps", "piecewise-constant virtual plant input"]},
+    "OPSD": {"dataset": "Open Power System Data Household Data, version 2020-04-15", "attribution": "Open Power System Data and CoSSMic", "identifier": "https://data.open-power-system-data.org/household_data/2020-04-15/", "license": "CC BY 4.0", "adaptations": ["aggregate load and PV", "release timestamps", "piecewise-constant virtual plant input"]}
+  }
+}

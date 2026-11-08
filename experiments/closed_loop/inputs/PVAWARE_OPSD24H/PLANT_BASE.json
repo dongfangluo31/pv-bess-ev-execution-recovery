@@ -1,0 +1,21 @@
+{
+  "battery": {
+    "energy_kwh": 4.766612413194444,
+    "charge_limit_kw": 1.191653103298611,
+    "discharge_limit_kw": 1.191653103298611,
+    "soc_min": 0.1,
+    "soc_max": 0.9,
+    "soc_initial": 0.5,
+    "soc_reference": 0.55,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95
+  },
+  "plant_step_s": 1,
+  "ramp_kw_per_second": 0.0397217701099537,
+  "lag_seconds": 5.0,
+  "duration_s": 86400,
+  "initial_tracked_power_kw": 0.0,
+  "source_scope": "Uniform original counter-support offline model; not exact measured seconds or contemporaneously available observation",
+  "dataset": "opsd",
+  "physical_policy": "PV_PRIORITY_NOEXPORT"
+}

@@ -1,0 +1,56 @@
+{
+  "working_directory": "repository root",
+  "dependency_install": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "experiments/fpga/requirements.txt"
+  ],
+  "fixed_point_self_test": [
+    "python",
+    "-B",
+    "experiments/fpga/run.py",
+    "--count",
+    "5000",
+    "--seed",
+    "20260706",
+    "--vectors-out",
+    "outputs/fpga/vectors_5009.hex",
+    "--summary-out",
+    "outputs/fpga/vectors_summary.json"
+  ],
+  "single_vector_dry_run": [
+    "python",
+    "-B",
+    "-m",
+    "ref_hil.host",
+    "--dry-run",
+    "--nominal-import",
+    "243.28",
+    "--nominal-charge",
+    "115.8",
+    "--nominal-discharge",
+    "0",
+    "--max-reduce-charge",
+    "115.8",
+    "--max-add-discharge",
+    "80",
+    "--feeder-limit",
+    "200"
+  ],
+  "vivado_batch_synthesis": [
+    "vivado",
+    "-mode",
+    "batch",
+    "-source",
+    "experiments/fpga/vivado/build.tcl",
+    "-tclargs",
+    "experiments/fpga",
+    "outputs/fpga/vivado_build"
+  ],
+  "result_tables": [
+    "../../results/fpga/fpga_hil_479305_vectors_summary.csv"
+  ]
+}

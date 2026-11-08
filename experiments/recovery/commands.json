@@ -1,0 +1,20 @@
+[
+  [
+    "python",
+    "-B",
+    "experiments/recovery/run.py",
+    "--branch",
+    "analytic",
+    "--output",
+    "outputs/recovery-analytic"
+  ],
+  [
+    "python",
+    "-B",
+    "experiments/recovery/run.py",
+    "--branch",
+    "numeric",
+    "--output",
+    "outputs/recovery-numeric"
+  ]
+]

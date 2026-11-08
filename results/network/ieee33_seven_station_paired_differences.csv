@@ -1,0 +1,4 @@
+case,prefix_attribution,first_network_command_effect_seconds,first_actual_divergence_seconds,delta_lower_bus_minutes,delta_lower_elapsed_minutes,delta_all_bus_deficit_pu_h,deficit_reduction_percent,delta_grid_only_cost_yuan,delta_throughput_kwh,delta_final_stored_energy_kwh,all_bus_strict_compliance_network
+NEAR,PREFIX_ATTRIBUTION_PASS,,,0,0,0.0,,0.0,0.0,0.0,True
+MIDDLE,PREFIX_ATTRIBUTION_PASS,60,60,-352,-56,-0.004205173332853274,98.1048875315505,-106.22563561625066,102.9986137167532,-108.41959338605557,False
+FAR,PREFIX_ATTRIBUTION_PASS,60,60,-1600,-79,-0.22667405378318115,98.94627148345322,-779.8292387230443,713.3662702239724,-750.9118633936569,False

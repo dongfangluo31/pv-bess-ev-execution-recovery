@@ -1,0 +1,29 @@
+[
+  [
+    "python",
+    "-B",
+    "experiments/seven_station/run.py",
+    "--case",
+    "NEAR",
+    "--output",
+    "outputs/seven-NEAR"
+  ],
+  [
+    "python",
+    "-B",
+    "experiments/seven_station/run.py",
+    "--case",
+    "MIDDLE",
+    "--output",
+    "outputs/seven-MIDDLE"
+  ],
+  [
+    "python",
+    "-B",
+    "experiments/seven_station/run.py",
+    "--case",
+    "FAR",
+    "--output",
+    "outputs/seven-FAR"
+  ]
+]

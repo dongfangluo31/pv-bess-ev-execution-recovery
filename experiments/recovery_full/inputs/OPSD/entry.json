@@ -1,0 +1,68 @@
+{
+  "case": "OPSD",
+  "start_s": 75600,
+  "handoff_s": 82800,
+  "handoff_hold_end_s": 82860,
+  "bridge_end_s": 86340,
+  "end_s": 86400,
+  "battery": {
+    "energy_kwh": 4.766612413194444,
+    "charge_limit_kw": 1.191653103298611,
+    "discharge_limit_kw": 1.191653103298611,
+    "soc_min": 0.1,
+    "soc_max": 0.9,
+    "soc_initial": 0.5,
+    "soc_reference": 0.55,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95
+  },
+  "feeder_safe_kw": 2.383306206597222,
+  "dynamics": {
+    "plant_step_s": 1,
+    "ramp_kw_per_second": 0.0397217701099537,
+    "lag_seconds": 5.0
+  },
+  "initial_energy_kwh": 2.3833301720300417,
+  "mid_target_kwh": 2.4309723307291664,
+  "final_target_kwh": 2.383306206597222,
+  "terminal_tolerances": {
+    "energy_kwh": 1e-08,
+    "power_kw": 1e-09
+  },
+  "shared_prices": {
+    "grid": 0.6,
+    "throughput": 0.08,
+    "curtail_report_only": 0.02
+  },
+  "origin_runs": [
+    "EARLY_PLATEAU_OPSD3H",
+    "EARLY_PLATEAU_CONTINUATION_1740"
+  ],
+  "telemetry": {
+    "soc": 0.5000050277704042,
+    "tracked_power_kw": 0.0,
+    "sample_s": 75600,
+    "available_s": 75600
+  },
+  "known_command_state": {
+    "as_of_s": 75600,
+    "last_delivered_command": {
+      "seq": 1259,
+      "control_decision_s": 75480,
+      "issue_s": 75480.0003119,
+      "effective_s": 75540,
+      "valid_until_s": 75600,
+      "signed_kw": 0.0
+    },
+    "pending_commands": [
+      {
+        "seq": 1260,
+        "control_decision_s": 75540,
+        "issue_s": 75540.0003062,
+        "effective_s": 75600,
+        "valid_until_s": 75660,
+        "signed_kw": 0.0
+      }
+    ]
+  }
+}
